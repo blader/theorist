@@ -2,7 +2,7 @@
 
 Maintain a continuously updated operating theory for ongoing engineering work.
 
-`theorist` is a Codex/Claude skill that keeps a per-repo narrative document at
+`theorist` is an agent skill (Codex and Claude compatible) that keeps a per-repo narrative document at
 `THEORY.MD` (repo root). The document explains the problem thesis, the current
 system model, why the strategy is shaped the way it is, and where uncertainty
 still exists.
@@ -11,24 +11,24 @@ It is intentionally not a task plan, changelog, or status report.
 
 ## Install
 
-### Codex
+Use a skills directory for your client and clone into it:
 
 ```bash
-git clone https://github.com/blader/theorist.git ~/.codex/skills/theorist
+SKILLS_DIR="${CODEX_SKILLS_DIR:-${CLAUDE_SKILLS_DIR:-$HOME/.codex/skills}}"
+mkdir -p "$SKILLS_DIR"
+git clone https://github.com/blader/theorist.git "$SKILLS_DIR/theorist"
 ```
 
-### Claude Code
+If you already have the repo checked out, copy just the skill file:
 
 ```bash
-git clone https://github.com/blader/theorist.git ~/.claude/skills/theorist
+mkdir -p "$SKILLS_DIR/theorist"
+cp SKILL.md "$SKILLS_DIR/theorist/"
 ```
 
 ## Usage
 
-Invoke directly:
-
-- Codex: `$theorist`
-- Claude Code: `/theorist`
+Invoke it using your client's skill command.
 
 Or ask naturally:
 
