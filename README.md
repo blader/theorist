@@ -39,7 +39,7 @@ Or ask naturally:
 ## What it enforces
 
 - One theory doc per repo at `THEORY.MD` (repo root)
-- Always-on activation in every substantive session
+- Always-on activation in every session
 - Sticky activation: once active, it stays active for the full session
 - Holistic rewrites (not appended logs)
 - Clear separation between:
