@@ -3,7 +3,7 @@
 Maintain a continuously updated operating theory for ongoing engineering work.
 
 `theorist` is a Codex/Claude skill that keeps a per-repo narrative document at
-`.claude/THEORY.MD`. The document explains the problem thesis, the current
+`THEORY.MD` (repo root). The document explains the problem thesis, the current
 system model, why the strategy is shaped the way it is, and where uncertainty
 still exists.
 
@@ -38,7 +38,7 @@ Or ask naturally:
 
 ## What it enforces
 
-- One theory doc per repo at `.claude/THEORY.MD`
+- One theory doc per repo at `THEORY.MD` (repo root)
 - Holistic rewrites (not appended logs)
 - Clear separation between:
   - problem thesis,

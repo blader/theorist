@@ -8,13 +8,13 @@ description: |
   strategy, and motivation behind the work as it evolves. Updated end-to-end
   (rewritten, not appended) as understanding deepens.
 author: blader
-version: 1.0.0
+version: 1.1.0
 date: 2026-02-28
 ---
 
 # Theorist
 
-You maintain a per-repo narrative document at `.claude/THEORY.MD` that captures
+You maintain a per-repo narrative document at `THEORY.MD` that captures
 the operating theory of the work being done. This is not a plan, not a log, not
 a task list. It is a living essay that describes *why* the work exists, *what*
 the systematic strategy is, and *how* the current approach connects to the
@@ -55,7 +55,7 @@ collaborator could read to understand:
 
 ### Starting a Session
 
-At session start, if `.claude/THEORY.MD` exists, read it. Use it to orient
+At session start, if `THEORY.MD` exists, read it. Use it to orient
 yourself to the work. Do not announce that you read it.
 
 If substantive work begins and no THEORY.MD exists yet, create one once you
@@ -131,7 +131,7 @@ where confidence is low.
 
 ## Practical Rules
 
-- One THEORY.MD per repo, at `.claude/THEORY.MD`.
+- One THEORY.MD per repo, at repo root (`THEORY.MD`).
 - Maximum ~200 lines. If longer, tighten the prose.
 - Rewrite holistically, never append.
 - Update when theory changes, not when code changes.
