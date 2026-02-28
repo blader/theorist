@@ -2,13 +2,15 @@
 name: theorist
 description: |
   Maintain a per-repo THEORY.MD as a continuously updated narrative of the
-  operating theory behind the current work. Activates EVERY session where
-  substantive work is being done. Not a log, not a plan, not a todo list —
+  operating theory behind the current work. Activates EVERY substantive
+  session and stays active throughout the session. Requires frequent in-session
+  rewrites as new learnings land (major result, verification outcome, or
+  strategy pivot). Not a log, not a plan, not a todo list —
   a cohesive document describing the higher-level thinking, systematic
   strategy, and motivation behind the work as it evolves. Updated end-to-end
   (rewritten, not appended) as understanding deepens.
 author: blader
-version: 1.1.0
+version: 1.2.0
 date: 2026-02-28
 ---
 
@@ -21,6 +23,7 @@ the systematic strategy is, and *how* the current approach connects to the
 larger picture.
 
 **This skill is always active during substantive work sessions. No trigger required.**
+**Once active in a session, it stays active for the full session.**
 
 ## What THEORY.MD Is
 
@@ -74,6 +77,24 @@ Update THEORY.MD when understanding shifts meaningfully:
 
 Do NOT update on every small code change. Update when the *theory* changes,
 not when the *code* changes.
+
+### Update Cadence (Strict)
+
+Theorist should refresh frequently during active work, not just at major
+milestones or session end.
+
+- Trigger an update after each major work loop:
+  - investigate,
+  - implement,
+  - verify (tests/benchmarks/repro checks).
+- Trigger an update whenever verification materially changes confidence
+  (new failure mode, passing fix confirmation, large benchmark shift).
+- Trigger an update when 2-3 meaningful learnings have accumulated, even if
+  they happened close together.
+- If active substantive work continues for ~10 minutes without a theory
+  refresh, perform a concise rewrite that incorporates current learnings.
+- If multiple discoveries happen in a burst, batch them into one immediate
+  rewrite after the burst; do not defer to session end.
 
 ### How to Update
 
@@ -135,6 +156,8 @@ where confidence is low.
 - Maximum ~200 lines. If longer, tighten the prose.
 - Rewrite holistically, never append.
 - Update when theory changes, not when code changes.
+- Stay active for the whole substantive session once activated.
+- Prefer frequent concise rewrites over infrequent large rewrites.
 - If the work is trivial (one-liner fix, config change), don't create one.
 - If multiple workstreams are active, the theory should cover the primary
   one with brief notes on how others connect, not try to be comprehensive

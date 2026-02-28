@@ -39,6 +39,8 @@ Or ask naturally:
 ## What it enforces
 
 - One theory doc per repo at `THEORY.MD` (repo root)
+- Always-on activation in every substantive session
+- Sticky activation: once active, it stays active for the full session
 - Holistic rewrites (not appended logs)
 - Clear separation between:
   - problem thesis,
@@ -46,6 +48,8 @@ Or ask naturally:
   - strategy,
   - key discoveries/pivots,
   - open questions.
+- Frequent in-session updates as learnings arrive (especially after
+  investigate/implement/verify loops and verification outcomes).
 - Updates when understanding changes, not when code churn happens.
 
 ## Why this helps
